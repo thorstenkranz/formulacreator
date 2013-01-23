@@ -1,0 +1,18 @@
+application: formulacreator
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: no
+
+handlers:
+- url: /formula/.*
+  script: formula.app
+- url: /.*
+  script: home.app
+
+libraries:
+- name: numpy
+  version: "latest"
+- name: matplotlib
+  version: "latest"
+
