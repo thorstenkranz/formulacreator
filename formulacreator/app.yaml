@@ -7,10 +7,16 @@ threadsafe: no
 handlers:
 - url: /formula/.*
   script: formula.app
+- url: /images
+  static_dir: static/images
+- url: /stylesheets
+  static_dir: static/stylesheets
 - url: /.*
   script: home.app
 
 libraries:
+- name: jinja2
+  version: "latest"
 - name: numpy
   version: "latest"
 - name: matplotlib

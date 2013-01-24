@@ -3,7 +3,10 @@
 Method for rendering a latex-style formula string to an image
 """
 import cStringIO
-import matplotlib.pyplot as plt
+try:
+    import matplotlib.pyplot as plt
+except AttributeError:
+    plt = None #For testing app locally, won't plot anything
 
 def render_formula(formula, fontsize=12, color="k"):
     plt.clf()

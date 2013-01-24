@@ -1,0 +1,50 @@
+body {
+	background: white url(../images/body_bg.png) fixed repeat-x;
+	font-family: Verdana, Tahoma, sans-serif;;
+}
+
+div.outer {width:100%;}
+
+div.header { 
+	width: 700px; 
+	color: gray;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+}
+
+div.main {
+	width: 800px; 
+	min-height: 600px;
+	background-color: white;
+	border: lightgray 2px solid;
+	border-radius: 20px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 20px;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+	color: darkslategray;
+	text-align: left;
+}
+
+a:link {
+	font-weight: bold;
+	color: darkslategray;
+	text-decoration: none;
+}
+
+a:visited {
+	font-weight: normal;
+	color: darkslategray;
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+	color: darkslategray;
+	text-decoration: underline;
+}
