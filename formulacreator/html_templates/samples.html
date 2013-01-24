@@ -1,0 +1,28 @@
+{% include 'header.html' %}
+<h1 align="center">Samples</h1>
+<p>
+This page demonstrates how formula creator can be used to render formulas. 
+The base-url for formula rendering is 
+<pre>http://formulacreator.appengine.com/formula/</pre>
+</p> 
+<p>
+All instructions for rendering are put into the HTTP-Querystring. Simply attach a '?' to the url
+and some 'key=value'-pairs. Modern browsers even take care of correct 
+<a href="http://en.wikipedia.org/wiki/URL-Encoding">url-encoding </a> for you. 
+</p>
+<p>
+If you plan to use it from other environments, e.g., your own website, you must take care of it on your own - or use our editor!
+</p>
+<p>
+Below are some samples, showing the main usecases:
+</p>
+{% for raw, encoded in queries %}
+<p>
+	<h3>{{raw}}</h3>
+	<a href="http://formulacreator.appspot.com/formula/?{{encoded}}">
+		<img src="http://formulacreator.appspot.com/formula/?{{encoded}}">
+	</a>
+</p>
+{% endfor %}
+{% include 'footer.html' %}
+

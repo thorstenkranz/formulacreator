@@ -2,7 +2,13 @@
 
 import webapp2
 
-from formulalib.handlers import HomeHandler, SamplesHandler
+from formulalib.handlers import (HomeHandler, 
+                                 SamplesHandler, 
+                                 InteractiveHandler,
+                                 AboutHandler)
 
-app = webapp2.WSGIApplication([('/samples', SamplesHandler),('/.*', HomeHandler)],
+app = webapp2.WSGIApplication([('/samples', SamplesHandler),
+                               ('/interactive', InteractiveHandler),
+                               ('/about', AboutHandler),
+                               ('/.*', HomeHandler)],
                               debug=True)

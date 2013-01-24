@@ -1,5 +1,5 @@
 body {
-	background: white url(../images/body_bg.png) fixed repeat-x;
+	background: white url(../images/body_bg.png) top center repeat-x;
 	font-family: Verdana, Tahoma, sans-serif;;
 }
 
@@ -21,9 +21,28 @@ div.main {
 	border: lightgray 2px solid;
 	border-radius: 20px;
 	margin-top: 10px;
+	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px 20px;
+}
+
+div.menu {
+	border-bottom: lightgray 1px solid;
+	text-align: center;
+}
+
+div.menu li {
+	padding: 0px;
+}
+div.menu li {
+	width: 100px;
+	display: inline-block;
+	background-color: lightgray;
+	border: darkslategray 1px solid;
+	padding: 3px;
+	border-radius: 10px;
+	margin: 1px 5px;
 }
 
 h1, h2, h3, h4, h5, h6 { 

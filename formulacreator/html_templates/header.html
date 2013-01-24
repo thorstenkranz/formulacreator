@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>{{title}}</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/fc.css">
+	</head>
+	<body>
+		<div class="outer">
+		   <div class="header">
+		   	formula creator v{{version}}
+		   </div>
+			<div class="main">
+				<div class="menu">
+					<ul>
+						{% for text, link in menu_items %}
+							<li><a href="{{link}}">{{text}}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
