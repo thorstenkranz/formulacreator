@@ -16,9 +16,10 @@ from formulalib.rendering import render_formula
 
 def test_simpleformula():
     formulas = [
-		r"\sum_{i=1}^{n}\, i = \frac{n(n+1)}{2}",
-		r"\int_x^X f(t)dt",
-		r"E = mc^2"]
+		r"\sum_{i=1}^{n}\,i=\frac{n(n+1)}{2}",
+		r"\int_x^Xf(t)dt",
+		r"E = mc^2",
+           "4x+6d\n=2\t(2x+3d)"]
     for i, formula in enumerate(formulas):
         yield _render_formula_to_file, i, formula
         

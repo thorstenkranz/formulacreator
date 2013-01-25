@@ -53,7 +53,7 @@ class SamplesHandler(SiteHandler):
     """Used to show samples"""
     template = jinja_environment.get_template('samples.html')
     
-    query_dicts = [{"formula":r"\sum_{i=1}^n \, i = \frac{n(n+1)}{2}"},
+    query_dicts = [{"formula":r"\sum_{i=1}^n\,i=\frac{n(n+1)}{2}"},
                      {"formula":r"test2"},
                      {"formula":r"E=mc^2",
                       "fontsize":"30"},

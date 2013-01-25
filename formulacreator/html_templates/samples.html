@@ -20,7 +20,10 @@ Below are some samples, showing the main usecases:
 <p>
 	<h3>{{raw}}</h3>
 	<a href="http://formulacreator.appspot.com/formula/?{{encoded}}">
-		<img src="http://formulacreator.appspot.com/formula/?{{encoded}}">
+		<img class="hidden" onload="fadeIn(this);" src="http://formulacreator.appspot.com/formula/?{{encoded}}">
+	</a>
+	<a href="interactive?{{encoded}}">
+		<img src="images/edit_icon.png" alt="Modify interactively" >
 	</a>
 </p>
 {% endfor %}

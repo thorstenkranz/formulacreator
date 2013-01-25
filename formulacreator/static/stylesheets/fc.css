@@ -1,6 +1,7 @@
 body {
 	background: white url(../images/body_bg.png) top center repeat-x;
-	font-family: Verdana, Tahoma, sans-serif;;
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 10pt;
 }
 
 div.outer {width:100%;}
@@ -30,6 +31,10 @@ div.main {
 div.menu {
 	border-bottom: lightgray 1px solid;
 	text-align: center;
+}
+
+div.menu ul {
+	padding: 0px;
 }
 
 div.menu li {
@@ -66,4 +71,8 @@ a:hover {
 	font-weight: bold;
 	color: darkslategray;
 	text-decoration: underline;
+}
+
+.hidden {
+ display:none;
 }

@@ -1,16 +1,39 @@
 {% include 'header.html' %}
 <h1>About {{title}}</h1>
-<h3>Who?</h3>
-<p>
-This project was started by <a href="http://www.thorstenkranz.de" target="_blank">Thorsten Kranz</a>.
-</p>
 
-<h3>Why?</h3>
-<p>
-The initial intend was purely educational - just to get started with Google App Engine and see what's possible.
+<div id="accordion">
+  <h3>Who?</h3>
+  <div>
+    <p>
+    This project was started by <a href="http://www.thorstenkranz.de" target="_blank">Thorsten Kranz</a>.
+    </p>
+    <p align="center">
+    <a href="http://stackoverflow.com/users/1156006/thorsten-kranz">
+		<img src="http://stackoverflow.com/users/flair/1156006.png" width="208" height="58" alt="profile for Thorsten Kranz at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Thorsten Kranz at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+	 </a>
+    </p>
+  </div>
+  <h3>Why?</h3>
+  <div>
+    <p>
+    The initial intend was purely educational - just to get started with Google App Engine and see what's possible.
 After a couple of hours of work, an initial version was up and running and turned out to be quite useful. 
-</p>
+    </p>
+  </div>
+  <h3>How?</h3>
+  <div>
+    <p>
+    This project is hosted at Google App Engine. It's server-part is written in Python, the formula rendering is done with Matplotlib.
+    
+    For the client-side, jQuery and jQuery UI are used to spice up the interface. 
+    </p>
+  </div>
+</div>
 
-
+<script>
+  $(function() {
+    $( "#accordion" ).accordion();
+  });
+</script>
 
 {% include 'footer.html' %}
